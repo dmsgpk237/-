@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기소개 페이지</title>
+    <style>
+        /* 기본 스타일링 */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        h1, h2, h3 {
+            text-align: center;
+            color: #333;
+        }
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 20px auto;
+            background-image: url(''); /* 프로필 사진 URL */
+            background-size: cover;
+            background-position: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .welcome-text {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2em;
+            color: #ff6347;
+            white-space: nowrap;
+            animation: moveText 3s linear infinite;
+        }
+        @keyframes moveText {
+            from {
+                transform: translate(0%, 0%) rotate(0deg);
+            }
+            to {
+                transform: translate(-20%, -20%) rotate(360deg);
+            }
+        }
+        .intro-section {
+            margin-top: 40px;
+            text-align: center;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-pic"></div>
+        <div class="welcome-text">환영합니다!</div>
+
+        <div class="intro-section">
+            <h2>나에 대한 소개</h2>
+            <p>여기에 자신에 대한 간단한 소개를 적어주세요.</p>
+        </div>
+
+        <div class="more-info">
+            <h2>추가 설명</h2>
+            <p>여기에 추가적인 설명이나 경력 등을 적어주세요.</p>
+        </div>
+
+        <div class="button-container">
+            <a href="#" class="button">더 알아보기</a>
+        </div>
+    </div>
+</body>
+</html>
